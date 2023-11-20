@@ -87,6 +87,7 @@
 Introduction();
 Numbers();
 BranchesAndLoops();
+ArraysAndCollections();
 
 #region numbers
 void Numbers()
@@ -409,6 +410,74 @@ void CombineBranchesAndLoops()
         }
     }
     Console.WriteLine($"Sum of integers between {start} and {end} divisible by {divisibleBy} is {sum}.");
+    Console.WriteLine();
+}
+#endregion
+
+#region collections
+void ArraysAndCollections()
+{
+    // Learn to manage data collections using List<T> in C#
+    // https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections
+    Console.WriteLine("Learn to manage data collections using List<T> in C#:");
+
+    WorkWithStrings();
+
+    Console.WriteLine("*********");
+}
+
+void WorkWithStrings()
+{
+    Console.WriteLine("A basic list example:");
+
+    List<string> names = ["Zjyslav", "Ana", "Felipe"];
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+    Console.WriteLine();
+
+    names.Add("Maria");
+    names.Add("Bill");
+    names.Remove("Ana");
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+    Console.WriteLine();
+
+    Console.WriteLine($"My name is {names[0]}.");
+    Console.WriteLine($"I've added {names[2]} and {names[3]} to the list.");
+    Console.WriteLine($"Ths list has {names.Count} people in it.");
+    Console.WriteLine();
+
+    Console.WriteLine("Search and sort lists:");
+    var index = names.IndexOf("Felipe");
+    if (index == -1)
+    {
+        Console.WriteLine($"When an item is not found, IndexOf returns {index}.");
+    }
+    else
+    {
+        Console.WriteLine($"The name {names[index]} is at index {index}.");
+    }
+
+    index = names.IndexOf("Not Found");
+    if (index == -1)
+    {
+        Console.WriteLine($"When an item is not found, IndexOf returns {index}.");
+    }
+    else
+    {
+        Console.WriteLine($"The name {names[index]} is at index {index}.");
+    }
+    Console.WriteLine();
+
+    names.Sort();
+    foreach (var name in names)
+    {
+        Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
     Console.WriteLine();
 }
 #endregion
