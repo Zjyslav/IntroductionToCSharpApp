@@ -85,3 +85,46 @@ Console.WriteLine();
 }
 
 Introduction();
+
+#region numbers
+// Numbers in C#
+// https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local
+Console.WriteLine("Numbers in C# tutorial:");
+
+WorkWithIntegers();
+
+Console.WriteLine("*********");
+
+void WorkWithIntegers()
+{
+    int a = 18;
+    int b = 6;
+
+    Console.WriteLine($"a = {a}, b = {b}");
+    Console.WriteLine();
+
+    // addition
+    Console.WriteLine("addition (a + b):");
+    int c = a + b;
+    Console.WriteLine(c);
+    Console.WriteLine();
+
+    //subtraction
+    Console.WriteLine("subtraction (a - b):");
+    c = a - b;
+    Console.WriteLine(c);
+    Console.WriteLine();
+
+    // multiplication
+    Console.WriteLine("multiplication (a * b):");
+    c = a * b;
+    Console.WriteLine(c);
+    Console.WriteLine();
+
+    // division
+    Console.WriteLine("division (a / b):");
+    c = a / b;
+    Console.WriteLine(c);
+    Console.WriteLine();
+}
+#endregion
