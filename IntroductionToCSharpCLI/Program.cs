@@ -86,6 +86,7 @@
 
 Introduction();
 Numbers();
+BranchesAndLoops();
 
 #region numbers
 void Numbers()
@@ -278,4 +279,65 @@ void WorkWithDecimals()
     Console.WriteLine();
 }
 double AreaOfCircle(double r) => Math.PI * r * r;
+#endregion
+
+#region branches
+void BranchesAndLoops()
+{
+    // C# if statements and loops - conditional logic tutorial
+    // https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops-local
+    Console.WriteLine("C# if statements and loops - conditional logic tutorial:");
+
+    ExploreIf();
+
+    Console.WriteLine("*********");
+}
+
+void ExploreIf()
+{
+    int a = 5;
+    int b = 6;
+    Console.WriteLine($"a = {a}, b = {b}");
+
+    Console.WriteLine("a + b");
+    if (a + b > 10)
+    {
+        Console.WriteLine("The answer is greater than 10.");
+    }
+    else
+    {
+        Console.WriteLine("The answer is not greater than 10.");
+    }
+    Console.WriteLine();
+
+    b = 3;
+    Console.WriteLine($"a = {a}, b = {b}");
+    Console.WriteLine("a + b");
+    if (a + b > 10)
+    {
+        Console.WriteLine("The answer is greater than 10;");
+    }
+    else
+    {
+        Console.WriteLine("The answer is not greater than 10.");
+    }
+    Console.WriteLine();
+
+    a = 1;
+    b = 1;
+    int c = 4;
+    Console.WriteLine($"a = {a}, b = {b}, c = {c}");
+    Console.WriteLine("(a + b + c > 10) || (a == b)");
+    if ((a + b + c > 10) || (a == b))
+    {
+        Console.WriteLine("The answer is greater than 10");
+        Console.WriteLine("Or the first number is equal to the second.");
+    }
+    else
+    {
+        Console.WriteLine("The answer is not greater than 10");
+        Console.WriteLine("And the first number is not equal to the second.");
+
+    }
+}
 #endregion
