@@ -297,6 +297,7 @@ void BranchesAndLoops()
 
 void ExploreIf()
 {
+    Console.WriteLine("Make decisions using the if statement:");
     int a = 5;
     int b = 6;
     Console.WriteLine($"a = {a}, b = {b}");
@@ -339,11 +340,12 @@ void ExploreIf()
     {
         Console.WriteLine("The answer is not greater than 10");
         Console.WriteLine("And the first number is not equal to the second.");
-
     }
+    Console.WriteLine();
 }
 void ExploreLoops()
 {
+    Console.WriteLine("Use loops to repeat operations:");
     Console.WriteLine("while loop:");
     int counter = 0;
     while (counter < 10)
