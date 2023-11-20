@@ -92,6 +92,7 @@ Introduction();
 Console.WriteLine("Numbers in C# tutorial:");
 
 WorkWithIntegers();
+OrderPrecedence();
 
 Console.WriteLine("*********");
 
@@ -126,6 +127,40 @@ void WorkWithIntegers()
     Console.WriteLine("division (a / b):");
     c = a / b;
     Console.WriteLine(c);
+    Console.WriteLine();
+}
+void OrderPrecedence()
+{
+    Console.WriteLine("Explore order of operations:");
+    int a = 5;
+    int b = 4;
+    int c = 2;
+    Console.WriteLine($"a = {a}, b = {b}, c = {c}");
+    Console.WriteLine();
+
+    Console.WriteLine("a + b * c");
+    int d = a + b * c;
+    Console.WriteLine(d);
+    Console.WriteLine();
+
+    Console.WriteLine("(a + b) * c");
+    d = (a + b) * c;
+    Console.WriteLine(d);
+    Console.WriteLine();
+
+    Console.WriteLine("(a + b) - 6 * c + (12 * 4) / 3 + 12");
+    d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+    Console.WriteLine(d);
+    Console.WriteLine();
+
+    int e = 7;
+    int f = 4;
+    int g = 3;
+    Console.WriteLine($"e = {e}, f = {f}, g = {g}");
+
+    Console.WriteLine("(e + f) / g");
+    int h = (e + f) / g;
+    Console.WriteLine(h);
     Console.WriteLine();
 }
 #endregion
