@@ -290,6 +290,7 @@ void BranchesAndLoops()
 
     ExploreIf();
     ExploreLoops();
+    CombineBranchesAndLoops();
 
     Console.WriteLine("*********");
 }
@@ -388,6 +389,24 @@ void ExploreLoops()
             Console.WriteLine($"The cell is ({row}, {column})");
         }
     }
+    Console.WriteLine();
+    }
+void CombineBranchesAndLoops()
+{
+    Console.WriteLine("Combine branches and loops:");
+    int start = 1;
+    int end = 20;
+    int divisibleBy = 3;
+    int sum = 0;
+
+    for (int i = start; i < end + 1; i++)
+    {
+        if (i % divisibleBy == 0)
+        {
+            sum += i;
+        }
+    }
+    Console.WriteLine($"Sum of integers between {start} and {end} divisible by {divisibleBy} is {sum}.");
     Console.WriteLine();
 }
 #endregion
