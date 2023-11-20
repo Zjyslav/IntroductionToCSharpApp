@@ -11,3 +11,17 @@ Console.WriteLine("Hello World!");
 
 Console.WriteLine();
 #endregion
+
+#region step2
+Console.WriteLine("Step 2:");
+
+string aFriend = "Bill";
+Console.WriteLine(aFriend);
+aFriend = "Maira";
+Console.WriteLine(aFriend);
+
+Console.WriteLine("Hello " + aFriend);
+Console.WriteLine($"Hello {aFriend}");
+
+Console.WriteLine();
+#endregion
