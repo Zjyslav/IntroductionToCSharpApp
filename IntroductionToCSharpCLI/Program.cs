@@ -97,6 +97,7 @@ Console.WriteLine("*********");
 
 void WorkWithIntegers()
 {
+    Console.WriteLine("Explore integer math:");
     int a = 18;
     int b = 6;
 
