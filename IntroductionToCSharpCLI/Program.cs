@@ -63,3 +63,18 @@ Console.WriteLine(sayHello.ToLower());
 
 Console.WriteLine();
 #endregion
+
+#region step5
+Console.WriteLine("Steps 5:");
+string songLyrics = "You say goodbye and I say hello";
+Console.WriteLine($"Song lyrics contain \"goodbye\": {songLyrics.Contains("goodbye")}");
+Console.WriteLine($"Song lyrics contain \"greetings\": {songLyrics.Contains("greetings")}");
+
+Console.WriteLine($"Song lyrics start with \"You\": {songLyrics.StartsWith("You")}");
+Console.WriteLine($"Song lyrics start with \"goodbye\": {songLyrics.StartsWith("goodbye")}");
+
+Console.WriteLine($"Song lyrics end with \"hello\": {songLyrics.EndsWith("hello")}");
+Console.WriteLine($"Song lyrics end with \"goodbye\": {songLyrics.EndsWith("goodbye")}");
+
+Console.WriteLine();
+#endregion
