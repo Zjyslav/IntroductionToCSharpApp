@@ -95,6 +95,7 @@ WorkWithIntegers();
 OrderPrecedence();
 TestLimits();
 WorkWithDoubles();
+WorkWithDecimals();
 
 Console.WriteLine("*********");
 
@@ -247,5 +248,30 @@ void WorkWithDoubles()
     Console.WriteLine((x + y) * (z + y));
     Console.WriteLine();
 }
+void WorkWithDecimals()
+{
+    Console.WriteLine("Work with decimal types:");
+    decimal min = decimal.MinValue;
+    decimal max = decimal.MaxValue;
+    Console.WriteLine($"The range of decimal type is {min} to {max}.");
+    Console.WriteLine();
+
+    Console.WriteLine("1/3 with doubles:");
+    double a = 1.0;
+    double b = 3.0;
+    Console.WriteLine(a / b);
+
+    Console.WriteLine("1/3 with decimals:");
+    decimal c = 1.0M;
+    decimal d = 3.0M;
+    Console.WriteLine(c / d);
+    Console.WriteLine();
+
+    Console.WriteLine("Challenge:");
+    double r = 2.50;
+    Console.WriteLine($"Area of a circle with radius = {r}cm is {AreaOfCircle(r)}cm^2.");
+
+    Console.WriteLine();
 }
+double AreaOfCircle(double r) => Math.PI * r * r;
 #endregion
