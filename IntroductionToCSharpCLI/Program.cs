@@ -1,4 +1,6 @@
-﻿// Hello World - Introduction to C#
+﻿void Introduction()
+{
+    // Hello World - Introduction to C#
 // https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world
 
 Console.WriteLine("Hello World - Introduction to C# tutorial:");
@@ -78,3 +80,8 @@ Console.WriteLine($"Song lyrics end with \"goodbye\": {songLyrics.EndsWith("good
 
 Console.WriteLine();
 #endregion
+
+    Console.WriteLine("*********");
+}
+
+Introduction();
