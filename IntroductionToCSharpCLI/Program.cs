@@ -422,6 +422,7 @@ void ArraysAndCollections()
     Console.WriteLine("Learn to manage data collections using List<T> in C#:");
 
     WorkWithStrings();
+    ListsOfOtherTypes();
 
     Console.WriteLine("*********");
 }
@@ -477,6 +478,26 @@ void WorkWithStrings()
     foreach (var name in names)
     {
         Console.WriteLine($"Hello {name.ToUpper()}!");
+    }
+    Console.WriteLine();
+}
+void ListsOfOtherTypes()
+{
+    List<int> fibonacciNumbers = [1, 1];
+
+    int countTarget = 20;
+
+    while (fibonacciNumbers.Count < countTarget)
+    {
+        var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+        var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+        fibonacciNumbers.Add(previous + previous2);
+    }
+
+    Console.WriteLine($"First {countTarget} Fibonacci numbers:");
+    for (int i = 0; i < fibonacciNumbers.Count; i++)
+    {
+        Console.WriteLine($"{i + 1}. {fibonacciNumbers[i]}");
     }
     Console.WriteLine();
 }
