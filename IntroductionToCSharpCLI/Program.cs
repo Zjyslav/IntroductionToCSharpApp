@@ -289,6 +289,7 @@ void BranchesAndLoops()
     Console.WriteLine("C# if statements and loops - conditional logic tutorial:");
 
     ExploreIf();
+    ExploreLoops();
 
     Console.WriteLine("*********");
 }
@@ -339,5 +340,54 @@ void ExploreIf()
         Console.WriteLine("And the first number is not equal to the second.");
 
     }
+}
+void ExploreLoops()
+{
+    Console.WriteLine("while loop:");
+    int counter = 0;
+    while (counter < 10)
+    {
+        Console.WriteLine($"Hello World! The counter is {counter}.");
+        counter++;
+    }
+    Console.WriteLine();
+
+    Console.WriteLine("do while loop:");
+    counter = 0;
+    do
+    {
+        Console.WriteLine($"Hello World! The counter is {counter}.");
+        counter++;
+    } while (counter < 10);
+    Console.WriteLine();
+
+    Console.WriteLine("for loop:");
+    for (int index = 0; index < 10; index++)
+    {
+        Console.WriteLine($"Hello World! The index is {index}.");
+    }
+    Console.WriteLine();
+
+    Console.WriteLine("Created nested loops:");
+    for (int row = 1; row < 11; row++)
+    {
+        Console.WriteLine($"The row is {row}.");
+    }
+    Console.WriteLine();
+
+    for (char column = 'a'; column < 'k'; column++)
+    {
+        Console.WriteLine($"The column is {column}.");
+    }
+    Console.WriteLine();
+
+    for (int row = 1; row < 11; row++)
+    {
+        for (char column = 'a'; column < 'k'; column++)
+        {
+            Console.WriteLine($"The cell is ({row}, {column})");
+        }
+    }
+    Console.WriteLine();
 }
 #endregion
