@@ -94,6 +94,7 @@ Console.WriteLine("Numbers in C# tutorial:");
 WorkWithIntegers();
 OrderPrecedence();
 TestLimits();
+WorkWithDoubles();
 
 Console.WriteLine("*********");
 
@@ -186,6 +187,64 @@ void TestLimits()
 
     int what = max + 3;
     Console.WriteLine($"An example of overflow (max int value + 3): {what}");
+    Console.WriteLine();
+}
+void WorkWithDoubles()
+{
+    Console.WriteLine("Work with the double type:");
+    double a = 5;
+    double b = 4;
+    double c = 2;
+    Console.WriteLine($"a = {a}, b = {b}, c = {c}");
+    Console.WriteLine();
+
+    Console.WriteLine("(a + b) / c");
+    double d = (a + b) / c;
+    Console.WriteLine(d);
+    Console.WriteLine();
+
+    double e = 19;
+    double f = 23;
+    double g = 8;
+    Console.WriteLine($"e = {e}, f = {f}, g = {g}");
+    Console.WriteLine();
+
+    Console.WriteLine("(e + f) / g");
+    double h = (e + f) / g;
+    Console.WriteLine(h);
+    Console.WriteLine();
+
+    double max = double.MaxValue;
+    double min = double.MinValue;
+    Console.WriteLine($"The range of double is {min} to {max}.");
+    Console.WriteLine();
+
+    Console.WriteLine("1.0 / 3.0");
+    double third = 1.0 / 3.0;
+    Console.WriteLine(third);
+    Console.WriteLine();
+
+    Console.WriteLine("Doubles challenge:");
+    double x = 19.19;
+    double y = 0.002;
+    double z = 0.01;
+    Console.WriteLine($"x = {x}, y = {y}, z = {z}");
+    Console.WriteLine();
+
+    Console.WriteLine("x * y");
+    Console.WriteLine(x * y);
+    Console.WriteLine();
+
+    Console.WriteLine("(x * y) / z");
+    Console.WriteLine((x * y) / z);
+    Console.WriteLine();
+
+    Console.WriteLine("x * x * x * x / z / z / z ");
+    Console.WriteLine(x*x*x*x/z/z/z);
+    Console.WriteLine();
+
+    Console.WriteLine("(x + y) * (z + y)");
+    Console.WriteLine((x + y) * (z + y));
     Console.WriteLine();
 }
 }
